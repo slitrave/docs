@@ -1,0 +1,23 @@
+/* Tailwind Directives: Required for Tailwind to build your utility classes */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS for the hover-pulse effect */
+@keyframes pulse-text {
+    0%, 100% { 
+        color: rgb(161, 161, 170); /* zinc-400 */
+    }
+    50% { 
+        color: rgb(228, 228, 231); /* zinc-200 */
+    }
+}
+
+.hover-pulse:hover {
+    animation: pulse-text 1.5s ease-in-out infinite;
+}
+
+/* Set the default dark background color for the entire page */
+body {
+    background-color: #0a0a0a; /* A very dark shade */
+}
